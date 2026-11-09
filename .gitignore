@@ -1,0 +1,104 @@
+# ==============================
+# OS & System Files
+# ==============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+# ==============================
+# Editor & IDE Settings
+# ==============================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.cursor/
+.zed/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# ==============================
+# Environment & Credentials
+# ==============================
+.env
+.env.backup
+.env.production
+.env.local
+.env.*.local
+auth.json
+
+# ==============================
+# Dependencies
+# ==============================
+node_modules/
+vendor/
+
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==============================
+# Build & Distribution Artifacts
+# ==============================
+dist/
+dist-ssr/
+.output/
+*.tsbuildinfo
+*.timestamp-*-*.mjs
+.eslintcache
+
+# Frontend / Vite
+frontend/dist/
+frontend/dist-ssr/
+
+# Backend / Laravel build
+backend/public/build/
+backend/public/hot
+backend/public/storage
+backend/public/fonts-manifest.dev.json
+
+# ==============================
+# Test & Coverage Outputs
+# ==============================
+coverage/
+test-results/
+playwright-report/
+blob-report/
+__screenshots__/
+.phpunit.cache/
+.phpunit.result.cache
+
+# ==============================
+# Laravel Runtime & SQLite Storage
+# ==============================
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+backend/storage/*.key
+backend/storage/pail/
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+
+# Keep empty gitkeep/gitignore files in storage
+!backend/storage/**/.gitignore
+!backend/bootstrap/cache/.gitignore
+!backend/database/.gitignore
+

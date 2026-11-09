@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+  --radius-sheet: 28px;
+  --radius-tile: 16px;
+}
+
+:root,
+[data-theme='professional'] {
+  --bg: #f4f4f4;
+  --surface: #ffffff;
+  --surface-subtle: #f4f4f4;
+  --text: #111111;
+  --muted: #595959;
+  --line: #e6e6e6;
+  --accent: #111111;
+  --accent-contrast: #ffffff;
+}
+
+[data-theme='minimal'] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-subtle: #f7f7f7;
+  --text: #0a0a0a;
+  --muted: #545454;
+  --line: #ececec;
+  --accent: #0a0a0a;
+  --accent-contrast: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --surface-subtle: #2a2a2a;
+  --text: #f4f4f4;
+  --muted: #a3a3a3;
+  --line: #2e2e2e;
+  --accent: #ffffff;
+  --accent-contrast: #121212;
+}
+
+[data-theme='creative'] {
+  --bg: #eaeae8;
+  --surface: #f8f8f6;
+  --surface-subtle: #e2e2de;
+  --text: #181816;
+  --muted: #575754;
+  --line: #d8d8d2;
+  --accent: #181816;
+  --accent-contrast: #f8f8f6;
+}
+
+[data-theme='nature'] {
+  --bg: #f3f1ec;
+  --surface: #faf9f6;
+  --surface-subtle: #eae6dd;
+  --text: #1b1a17;
+  --muted: #5c5a54;
+  --line: #dedad0;
+  --accent: #1b1a17;
+  --accent-contrast: #faf9f6;
+}
+
+[data-theme='playful'] {
+  --bg: #eef2f6;
+  --surface: #ffffff;
+  --surface-subtle: #e2e8f0;
+  --text: #0f172a;
+  --muted: #475569;
+  --line: #cbd5e1;
+  --accent: #0f172a;
+  --accent-contrast: #ffffff;
+}
+
+/* R-39: accessible semantics and interaction affordances */
+button,
+a[href],
+summary,
+select,
+label[for],
+[role='button'],
+[role='tab'] {
+  cursor: pointer;
+}
+
+button:disabled,
+[role='button'][aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
+/* R-32: clearly visible focus indicator */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
